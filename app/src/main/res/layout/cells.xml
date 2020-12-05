@@ -2,22 +2,157 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    
+    android:background="@drawable/a"
+
      >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
 
-    <HorizontalScrollView
-        android:id="@+id/HorizontalScrollView01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/Pole1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ваше поле"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="#F5F5DC"
+                    android:visibility="gone"/>
+                <TextView
+                        android:id="@+id/textnapole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="#F5F5DC"
+                    android:visibility="gone"/>
 
+                <GridLayout
+                    android:id="@+id/CellsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F5F5DC"
+                    android:visibility="gone"
+                    ></GridLayout>
+                <Button
+                    android:id="@+id/closeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#FF0000"
+                    android:onClick="restartUserProgram"
+                    android:text="Перезапустить программу"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#FF0000"
+                    android:background="#F5F5DC"
+                    android:visibility="gone"/>
+                <Button
+                    android:id="@+id/OrientationB"
+                    android:layout_width="match_parent"
+                    android:background="#00FF00"
+                    android:layout_height="wrap_content"
+                    android:text="Поменять ориентацию корабля"
+                    android:layout_gravity="center"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/textOrientation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="#F5F5DC"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/Pole2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Поле врага"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#F5F5DC"
+                    android:padding="5dp"
+                    android:visibility="gone"/>
         <GridLayout
-            android:id="@+id/CellsLayout"
-            android:background="@android:color/holo_green_light"
+            android:id="@+id/CellsLayout1"
+            android:background="#F5F5DC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
-        >
+            android:visibility="gone"
+            >
         </GridLayout>
-    </HorizontalScrollView>
 
+                <TextView
+                    android:id="@+id/Start"
+                    android:layout_width="408dp"
+                    android:layout_height="190dp"
+                    android:gravity="center"
+                    android:text="МОРСКОЙ БОЙ"
+                    android:textSize="40sp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textStyle="italic" />
+
+                <Button
+                    android:id="@+id/Singleplayer"
+                    android:layout_width="149dp"
+                    android:layout_height="67dp"
+                    android:layout_gravity="center"
+                    android:onClick="Singleplayer"
+                    android:background="@android:color/holo_red_light"
+                    android:text="Одиночная игра" />
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="QWEQEQQW"
+                    android:background="#F5F5DC"
+                    android:visibility="invisible"/>
+                <Button
+                    android:id="@+id/Multiplayer"
+                    android:layout_width="149dp"
+                    android:layout_height="67dp"
+                    android:layout_gravity="center"
+                    android:onClick="Multiplayer"
+                    android:background="@android:color/holo_red_light"
+                    android:text="2 Игрока" />
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="QWEQEQQW"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="#F5F5DC"
+                    android:visibility="invisible"/>
+
+                <Button
+                    android:id="@+id/Quit"
+                    android:onClick="Quit"
+                    android:layout_width="149dp"
+                    android:layout_height="67dp"
+                    android:background="@android:color/holo_red_light"
+                    android:text="Выйти из игры"
+                    android:layout_gravity="center"
+                    />
+        </LinearLayout>
 </ScrollView>

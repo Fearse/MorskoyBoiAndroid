@@ -1,4 +1,4 @@
-#Fri Oct 30 12:45:16 MSK 2020
-base.0=D\:\\Leo's\\Projects\\GitHub\\Samsung\\Cells\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+#Sat Dec 05 04:47:17 MSK 2020
+base.0=C\:\\Users\\krivo\\AndroidStudioProjects\\1.11-Cells\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
