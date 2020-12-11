@@ -222,7 +222,6 @@ public class CellsActivity extends AppCompatActivity {
 
                 }
             }
-            //  Stub.show(context, "Саня, ложись, по нам ебашат");
 
         }
     }
@@ -327,22 +326,7 @@ public class CellsActivity extends AppCompatActivity {
                     Popadanie=1;
                 }
                 pole[x][y].setBackgroundColor(Color.RED);
-             /*   if(Razmetka[x+1][y]==0)
-                    Razmetka[x+1][y]=2;
-                if(Razmetka[x+1][y+1]==0)
-                    Razmetka[x+1][y+1]=2;
-                if(Razmetka[x+1][y-1]==0)
-                    Razmetka[x+1][y-1]=2;
-                if(Razmetka[x][y-1]==0)
-                    Razmetka[x][y-1]=2;
-                if (Razmetka[x][y+1]==0)
-                    Razmetka[x][y+1]=2;
-                if (Razmetka[x-1][y+1]==0)
-                    Razmetka[x-1][y+1]=2;
-                if(Razmetka[x-1][y]==0)
-                    Razmetka[x-1][y]=2;
-                if(Razmetka[x-1][y-1]==0)
-                    Razmetka[x-1][y-1]=2;*/
+
                 if (Razmetka[x + 1][y] == 1 || Razmetka[x][y + 1] == 1 || Razmetka[x - 1][y] == 1 || Razmetka[x][y - 1] == 1 || Razmetka[x + 1][y + 1] == 1 || Razmetka[x - 1][y - 1] == 1 ||
                         Razmetka[x + 1][y] == 4 && x + 2 < 11 && Razmetka[x + 2][y] == 1 || Razmetka[x - 1][y] == 4 && x - 2 > 0 && Razmetka[x - 2][y] == 1 ||
                         Razmetka[x][y + 1] == 4 && y + 2 < 11 && Razmetka[x][y + 2] == 1 || Razmetka[x][y - 1] == 4 && y - 2 > 0 && Razmetka[x][y - 2] == 1 ||

@@ -1,4 +1,4 @@
-#Sat Dec 05 04:47:17 MSK 2020
+#Sat Dec 05 09:37:15 MSK 2020
 base.0=C\:\\Users\\krivo\\AndroidStudioProjects\\1.11-Cells\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
